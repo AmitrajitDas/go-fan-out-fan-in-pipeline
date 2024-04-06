@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+/* This Go program generates random numbers and checks if they are prime numbers using concurrent goroutines.
+It demonstrates the concepts of fan-out and fan-in patterns in Go concurrency.
+*/
+
 // take function takes n elements from a stream until done signal is received.
 func take[T any, K any](done <-chan K, stream <-chan T, n int) <-chan T {
 	taken := make(chan T)
