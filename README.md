@@ -2,8 +2,6 @@
 
 The fan-out/fan-in pattern is a concurrency design pattern commonly used in Go for parallelizing and coordinating concurrent tasks. It is particularly useful when you have a time-consuming task that can be divided into smaller subtasks that can be executed concurrently.
 
-This Go program generates random numbers and checks if they are prime numbers using concurrent goroutines. It demonstrates the concepts of fan-out and fan-in patterns in Go concurrency.
-
 ## How it works
 
 ### The pattern consists of two main stages: fan-out and fan-in.
